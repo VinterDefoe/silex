@@ -1,0 +1,28 @@
+{
+  "name": "silex_project",
+  "version": "1.0.0",
+  "description": "Start_project_on_silex",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinterDefoe/silex.git"
+  },
+  "author": "Vinter Defoe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinterDefoe/silex/issues"
+  },
+  "homepage": "https://github.com/VinterDefoe/silex#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-csso": "^1.0.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^1.2.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-sass": "^2.1.1",
+    "bootstrap-sass": "^v3.3.7"
+  }
+}
