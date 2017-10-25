@@ -1,25 +1,58 @@
 <?php
 
+
+use App\Controllers\IndexController;
+use App\Models\BaseModel;
+use Silex\Application;
+
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$app = new Silex\Application();
+/**
+ * Class Bootstrap
+ */
+class Bootstrap
+{
 
+    protected $app;
 
-$app->register(new Silex\Provider\TwigServiceProvider(),array(
-    'twig.path' => __DIR__.'/../app/views',
-));
+    public function __construct()
+    {
+        $app = new Silex\Application([$app['debug'] = true]);
+        $this->app = $app;
 
-$app->register(new Silex\Provider\AssetServiceProvider(), array(
-    'assets.base_path' => '/app'
-));
+        $this->initProviders();
+        $this->initApp();
+        $this->initControllers();
+        $this->app->run();
+    }
 
+    protected function initProviders()
+    {
 
+        $this->app->register(new Silex\Provider\TwigServiceProvider(), array(
+            'twig.path' => __DIR__ . '/../app/views',
+        ));
 
-$test = 'Main page';
-$app->get('/', function () use ($app,$test){
-    return $app['twig']->render('main.twig',array(
-        'title' => $test,
-    ));
-});
+        $this->app->register(new Silex\Provider\AssetServiceProvider());
 
+        $this->app->register(new Silex\Provider\DoctrineServiceProvider(), array(
+            'db.options' => array(
+                'driver' => 'pdo_sqlite',
+                'path' => __DIR__ . '/resources/app.db',
+            ),
+        ));
+    }
 
+    protected function initApp()
+    {
+        $app = $this->app;
+        $model = new BaseModel();
+        $model::setDb($app['db']);
+    }
+
+    protected function initControllers()
+    {
+        $app = $this->app;
+        $app->mount('/', new IndexController());
+    }
+}
