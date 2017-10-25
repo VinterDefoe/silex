@@ -3,7 +3,8 @@
 
 use App\Controllers\IndexController;
 use App\Models\BaseModel;
-use Silex\Application;
+use App\Providers\CookiesServiceProvider;
+use Silex\Provider\FormServiceProvider;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -26,6 +27,7 @@ class Bootstrap
         $this->app->run();
     }
 
+
     protected function initProviders()
     {
 
@@ -41,6 +43,8 @@ class Bootstrap
                 'path' => __DIR__ . '/resources/app.db',
             ),
         ));
+        $this->app->register(new FormServiceProvider());
+        $this->app->register(new CookiesServiceProvider());
     }
 
     protected function initApp()

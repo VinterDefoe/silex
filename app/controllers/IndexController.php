@@ -22,6 +22,12 @@ class IndexController extends BaseController implements ControllerProviderInterf
             ));
         });
 
+        $index->get('/{id}',function($id){
+            $model = new ReviewModel();
+            $result = $model->getReview($id);
+            return '1';
+        });
+
         return $index;
     }
 }
