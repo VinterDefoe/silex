@@ -18,7 +18,8 @@ class Bootstrap
 
     public function __construct()
     {
-        $app = new Silex\Application([$app['debug'] = true]);
+        $app = new Silex\Application();
+        $app['debug'] = true;
         $this->app = $app;
 
         $this->initProviders();
@@ -45,6 +46,12 @@ class Bootstrap
         ));
         $this->app->register(new Sorien\Provider\PimpleDumpProvider());
         $this->app->register(new FormServiceProvider());
+        $this->app->register(new Silex\Provider\ValidatorServiceProvider());
+        $this->app->register(new Silex\Provider\TranslationServiceProvider(), array(
+            'translator.domains' => array(),
+        ));
+        $this->app->register(new Silex\Provider\LocaleServiceProvider());
+
         $this->app->register(new CookiesServiceProvider());
     }
 

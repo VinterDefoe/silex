@@ -6,13 +6,17 @@
         "symfony/twig-bridge": "^3.3",
         "doctrine/dbal": "~2.2",
         "symfony/form": "^3.3",
-        "sorien/silex-pimple-dumper": "~2.0"
+        "sorien/silex-pimple-dumper": "~2.0",
+        "symfony/validator": "^3.3",
+        "symfony/config": "^3.3",
+        "symfony/translation": "^3.3"
     },
     "autoload":{
         "psr-4":{
             "App\\Models\\":"app/models/",
             "App\\Controllers\\":"app/controllers",
-            "App\\Providers\\":"app/providers"
+            "App\\Providers\\":"app/providers",
+            "App\\Forms\\":"app/forms"
         }
     }
 }

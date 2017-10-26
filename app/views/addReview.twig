@@ -1,0 +1,12 @@
+{% form_theme form 'bootstrap_3_horizontal_layout.html.twig' %}
+{% extends 'main.twig' %}
+
+{% block title %} Новый отзыв {% endblock %}
+
+{% block titlePage %} Новый отзыв {% endblock %}
+
+{% block content %}
+
+        {{ form_widget(form) }}
+
+{% endblock %}

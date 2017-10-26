@@ -5,3 +5,7 @@ Start_project_on Silex micro-framework
 1) clone project
 2) composer update
 3) npm update
+
+
+
+/_dump  for dump in pimple.json

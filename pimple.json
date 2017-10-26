@@ -12,7 +12,7 @@
     {
         "name": "debug",
         "type": "bool",
-        "value": false
+        "value": true
     },
     {
         "name": "charset",
@@ -118,11 +118,6 @@
         "name": "exception_handler",
         "type": "class",
         "value": "Silex\\ExceptionHandler"
-    },
-    {
-        "name": 0,
-        "type": "bool",
-        "value": true
     },
     {
         "name": "twig.options",
@@ -368,6 +363,81 @@
         "value": "Symfony\\Component\\Form\\ResolvedFormTypeFactory"
     },
     {
+        "name": "validator",
+        "type": "class",
+        "value": "Symfony\\Component\\Validator\\Validator\\RecursiveValidator"
+    },
+    {
+        "name": "validator.builder",
+        "type": "class",
+        "value": "Symfony\\Component\\Validator\\ValidatorBuilder"
+    },
+    {
+        "name": "validator.mapping.class_metadata_factory",
+        "type": "class",
+        "value": "Symfony\\Component\\Validator\\Mapping\\Factory\\LazyLoadingMetadataFactory"
+    },
+    {
+        "name": "validator.validator_factory",
+        "type": "class",
+        "value": "Silex\\Provider\\Validator\\ConstraintValidatorFactory"
+    },
+    {
+        "name": "validator.object_initializers",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "validator.validator_service_ids",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "translator",
+        "type": "class",
+        "value": "Symfony\\Component\\Translation\\Translator"
+    },
+    {
+        "name": "translator.listener",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\EventListener\\TranslatorListener"
+    },
+    {
+        "name": "translator.message_selector",
+        "type": "class",
+        "value": "Symfony\\Component\\Translation\\MessageSelector"
+    },
+    {
+        "name": "translator.resources",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "translator.domains",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "locale_fallbacks",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "translator.cache_dir",
+        "type": "null",
+        "value": ""
+    },
+    {
+        "name": "locale.listener",
+        "type": "class",
+        "value": "Silex\\Provider\\Locale\\LocaleListener"
+    },
+    {
+        "name": "locale",
+        "type": "string",
+        "value": "en"
+    },
+    {
         "name": "cookies",
         "type": "string",
         "value": "hello"
@@ -381,5 +451,20 @@
         "name": "dbs.default",
         "type": "string",
         "value": "default"
+    },
+    {
+        "name": "twig.app_variable",
+        "type": "class",
+        "value": "Symfony\\Bridge\\Twig\\AppVariable"
+    },
+    {
+        "name": "twig.form.engine",
+        "type": "class",
+        "value": "Symfony\\Bridge\\Twig\\Form\\TwigRendererEngine"
+    },
+    {
+        "name": "twig.form.renderer",
+        "type": "class",
+        "value": "Symfony\\Bridge\\Twig\\Form\\TwigRenderer"
     }
 ]
