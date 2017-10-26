@@ -31,7 +31,7 @@ class ReviewModel extends BaseModel
         $query = $qb;
 
 
-       var_dump($query);
+
 
     }
 }

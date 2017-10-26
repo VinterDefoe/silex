@@ -1,0 +1,385 @@
+[
+    {
+        "name": "request.http_port",
+        "type": "int",
+        "value": 80
+    },
+    {
+        "name": "request.https_port",
+        "type": "int",
+        "value": 443
+    },
+    {
+        "name": "debug",
+        "type": "bool",
+        "value": false
+    },
+    {
+        "name": "charset",
+        "type": "string",
+        "value": "UTF-8"
+    },
+    {
+        "name": "logger",
+        "type": "null",
+        "value": ""
+    },
+    {
+        "name": "resolver",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\Controller\\ControllerResolver"
+    },
+    {
+        "name": "argument_metadata_factory",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\ControllerMetadata\\ArgumentMetadataFactory"
+    },
+    {
+        "name": "argument_value_resolvers",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "argument_resolver",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\Controller\\ArgumentResolver"
+    },
+    {
+        "name": "kernel",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\HttpKernel"
+    },
+    {
+        "name": "request_stack",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpFoundation\\RequestStack"
+    },
+    {
+        "name": "dispatcher",
+        "type": "class",
+        "value": "Symfony\\Component\\EventDispatcher\\EventDispatcher"
+    },
+    {
+        "name": "callback_resolver",
+        "type": "class",
+        "value": "Silex\\CallbackResolver"
+    },
+    {
+        "name": "route_class",
+        "type": "string",
+        "value": "Silex\\Route"
+    },
+    {
+        "name": "route_factory",
+        "type": "class",
+        "value": "Silex\\Route"
+    },
+    {
+        "name": "routes_factory",
+        "type": "class",
+        "value": "Symfony\\Component\\Routing\\RouteCollection"
+    },
+    {
+        "name": "routes",
+        "type": "class",
+        "value": "Symfony\\Component\\Routing\\RouteCollection"
+    },
+    {
+        "name": "url_generator",
+        "type": "class",
+        "value": "Symfony\\Component\\Routing\\Generator\\UrlGenerator"
+    },
+    {
+        "name": "request_matcher",
+        "type": "class",
+        "value": "Silex\\Provider\\Routing\\RedirectableUrlMatcher"
+    },
+    {
+        "name": "request_context",
+        "type": "class",
+        "value": "Symfony\\Component\\Routing\\RequestContext"
+    },
+    {
+        "name": "controllers",
+        "type": "class",
+        "value": "Silex\\ControllerCollection"
+    },
+    {
+        "name": "controllers_factory",
+        "type": "class",
+        "value": "Silex\\ControllerCollection"
+    },
+    {
+        "name": "routing.listener",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\EventListener\\RouterListener"
+    },
+    {
+        "name": "exception_handler",
+        "type": "class",
+        "value": "Silex\\ExceptionHandler"
+    },
+    {
+        "name": 0,
+        "type": "bool",
+        "value": true
+    },
+    {
+        "name": "twig.options",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "twig.form.templates",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "twig.path",
+        "type": "string",
+        "value": "F:\\OpenServer\\domains\\smith\\app\/..\/app\/views"
+    },
+    {
+        "name": "twig.templates",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "twig.date.format",
+        "type": "string",
+        "value": "F j, Y H:i"
+    },
+    {
+        "name": "twig.date.interval_format",
+        "type": "string",
+        "value": "%d days"
+    },
+    {
+        "name": "twig.date.timezone",
+        "type": "null",
+        "value": ""
+    },
+    {
+        "name": "twig.number_format.decimals",
+        "type": "int",
+        "value": 0
+    },
+    {
+        "name": "twig.number_format.decimal_point",
+        "type": "string",
+        "value": "."
+    },
+    {
+        "name": "twig.number_format.thousands_separator",
+        "type": "string",
+        "value": ","
+    },
+    {
+        "name": "twig",
+        "type": "class",
+        "value": "Twig_Environment"
+    },
+    {
+        "name": "twig.loader.filesystem",
+        "type": "class",
+        "value": "Twig_Loader_Filesystem"
+    },
+    {
+        "name": "twig.loader.array",
+        "type": "class",
+        "value": "Twig_Loader_Array"
+    },
+    {
+        "name": "twig.loader",
+        "type": "class",
+        "value": "Twig_Loader_Chain"
+    },
+    {
+        "name": "twig.environment_factory",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "twig.runtimes",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "twig.runtime_loader",
+        "type": "class",
+        "value": "Silex\\Provider\\Twig\\RuntimeLoader"
+    },
+    {
+        "name": "assets.packages",
+        "type": "class",
+        "value": "Symfony\\Component\\Asset\\Packages"
+    },
+    {
+        "name": "assets.default_package",
+        "type": "class",
+        "value": "Symfony\\Component\\Asset\\PathPackage"
+    },
+    {
+        "name": "assets.context",
+        "type": "class",
+        "value": "Symfony\\Component\\Asset\\Context\\RequestStackContext"
+    },
+    {
+        "name": "assets.base_path",
+        "type": "string",
+        "value": ""
+    },
+    {
+        "name": "assets.base_urls",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "assets.version",
+        "type": "null",
+        "value": ""
+    },
+    {
+        "name": "assets.version_format",
+        "type": "null",
+        "value": ""
+    },
+    {
+        "name": "assets.json_manifest_path",
+        "type": "null",
+        "value": ""
+    },
+    {
+        "name": "assets.named_packages",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "assets.strategy_factory",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "assets.package_factory",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "db.default_options",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "dbs.options.initializer",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "dbs",
+        "type": "container",
+        "value": [
+            {
+                "name": "default",
+                "type": "class",
+                "value": "Doctrine\\DBAL\\Connection"
+            }
+        ]
+    },
+    {
+        "name": "dbs.config",
+        "type": "container",
+        "value": [
+            {
+                "name": "default",
+                "type": "class",
+                "value": "Doctrine\\DBAL\\Configuration"
+            }
+        ]
+    },
+    {
+        "name": "dbs.event_manager",
+        "type": "container",
+        "value": [
+            {
+                "name": "default",
+                "type": "class",
+                "value": "Doctrine\\Common\\EventManager"
+            }
+        ]
+    },
+    {
+        "name": "db",
+        "type": "class",
+        "value": "Doctrine\\DBAL\\Connection"
+    },
+    {
+        "name": "db.config",
+        "type": "class",
+        "value": "Doctrine\\DBAL\\Configuration"
+    },
+    {
+        "name": "db.event_manager",
+        "type": "class",
+        "value": "Doctrine\\Common\\EventManager"
+    },
+    {
+        "name": "db.options",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "form.types",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "form.type.extensions",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "form.type.guessers",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "form.extension.silex",
+        "type": "class",
+        "value": "Silex\\Provider\\Form\\SilexFormExtension"
+    },
+    {
+        "name": "form.extensions",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "form.factory",
+        "type": "class",
+        "value": "Symfony\\Component\\Form\\FormFactory"
+    },
+    {
+        "name": "form.registry",
+        "type": "class",
+        "value": "Symfony\\Component\\Form\\FormRegistry"
+    },
+    {
+        "name": "form.resolved_type_factory",
+        "type": "class",
+        "value": "Symfony\\Component\\Form\\ResolvedFormTypeFactory"
+    },
+    {
+        "name": "cookies",
+        "type": "string",
+        "value": "hello"
+    },
+    {
+        "name": "dbs.options",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "dbs.default",
+        "type": "string",
+        "value": "default"
+    }
+]

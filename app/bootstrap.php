@@ -43,6 +43,7 @@ class Bootstrap
                 'path' => __DIR__ . '/resources/app.db',
             ),
         ));
+        $this->app->register(new Sorien\Provider\PimpleDumpProvider());
         $this->app->register(new FormServiceProvider());
         $this->app->register(new CookiesServiceProvider());
     }
